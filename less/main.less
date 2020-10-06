@@ -1,2 +1,59 @@
 @import "variables";
 @import "mixins";
+
+body{
+    background: @background-primary;
+}
+
+.header{
+    background: @color-white;
+}
+    
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus
+{
+background:none !important;
+border-color:none !important;
+}
+
+.icon-bar {
+	width: 30px; 
+	height: 3px;
+	background-color: @color-primary;
+	display: block;
+	transition: all 0.2s;
+	margin: 6px;
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 12% 25%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 0 70%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
