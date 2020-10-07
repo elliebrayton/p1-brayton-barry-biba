@@ -1,6 +1,90 @@
+h1 {
+  font-family: operetta-12, serif;
+  color: #232323;
+  font-size: 40px;
+}
+h1 span {
+  color: #C97C68;
+}
+h2 {
+  font-family: operetta-12, serif;
+  color: #232323;
+}
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background: none !important;
+  border-color: none !important;
+}
+.icon-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #C97C68;
+  display: block;
+  transition: all 0.2s;
+  margin: 6px;
+}
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 12% 25%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 0 70%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+.nav-link {
+  font-size: 20px;
+  color: #63665D;
+}
 body {
   background: #FAF7F4;
+  font-family: hero-new, sans-serif !important;
 }
-.navbar {
+.header {
   background: #ffffff;
+}
+.specials_textbox {
+  border: #C6CDBB 2px solid;
+  border-radius: 5px;
+  max-width: 530px;
+  background: #FAF7F4C2;
+}
+.btn {
+  font-family: hero-new, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.btn-primary {
+  background: #C97C68;
+  border: none;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background: #ffffff;
+  color: #C97C68;
+}
+.btn-primary .active {
+  background: inherit;
+}
+.section {
+  background-image: url(../images/coffee_mugs.png);
+  background-size: 100%;
+  background-position: 20% 30%;
 }

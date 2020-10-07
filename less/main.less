@@ -1,8 +1,13 @@
 @import "variables";
 @import "mixins";
+@import "typography";
+@import "media-queries";
+@import "layout/navigation.less";
 
 body{
+
     background: @background-primary;
+    font-family: @font-family-secondary !important;
 }
 
 .header{
@@ -10,50 +15,33 @@ body{
 }
     
 
-.navbar-toggle:hover,
-.navbar-toggle:active,
-.navbar-toggle:focus
-{
-background:none !important;
-border-color:none !important;
+
+.specials_textbox{
+    border: #C6CDBB 2px solid;
+    border-radius: 5px;
+    max-width: 530px;
+    background:#FAF7F4C2;
 }
 
-.icon-bar {
-	width: 30px; 
-	height: 3px;
-	background-color: @color-primary;
-	display: block;
-	transition: all 0.2s;
-	margin: 6px;
-}
- 
-.navbar-toggler {
-  border: none;
-  background: transparent !important;
+.btn{
+    font-family: @font-family-secondary;
+    font-size: 15px;
+    font-weight: 400;
+    &-primary{
+        background: @color-primary;
+        border: none;
+        &:hover, &:active, &:focus{
+            background:@color-white;
+            color: @color-primary;
+        }
+        .active{
+            background: inherit;
+        }
+    }
 }
 
-.navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 12% 25%;
-}
- 
-.navbar-toggler .middle-bar {
-  opacity: 0;
-}
- 
-.navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 0 70%;
-}
- 
-.navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
-}
- 
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-}
- 
-.navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
+.section{
+    background-image:url(../images/coffee_mugs.png);
+    background-size: 100%;
+    background-position: 20% 30%;
 }
