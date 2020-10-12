@@ -48,10 +48,6 @@ h2 {
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
-.header .navbar-nav .nav-item.active .nav-link,
-.header .navbar-nav .nav-item:hover .nav-link {
-  color: #C97C68;
-}
 .header .nav-link {
   font-size: 20px;
   color: #63665D;
@@ -78,6 +74,7 @@ a.nav-link.active {
 body {
   background: #FAF7F4;
   font-family: hero-new, sans-serif !important;
+  overflow-x: hidden;
 }
 .header {
   background: #ffffff;
@@ -120,6 +117,7 @@ body {
   background-size: 100%;
   background-position: 20% 30%;
 }
+
 .section_group {
   position: relative;
   display: flex;
@@ -146,8 +144,78 @@ body {
 .footer {
   background: #C6CDBB;
 }
-@media (min-width: 720px) {
+@media (max-width: 600px) {
+  .w-utility {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
   .section--one {
     background-image: none;
+  }
+
+  .section--two {
+    min-height: 600px;
+  }
+  .section_group--item.one {
+    position: absolute;
+    left: 0;
+    transform: translate(5%, 25%);
+  }
+  .section_group--item.two {
+    display: block;
+    position: absolute;
+    left: 0;
+    transform: translate(20%, -40%);
+    z-index: -99;
+  }
+  .section_group--item.two img {
+    max-width: 100%;
+  }
+  .section_group--item.three {
+    background-color: #EBDED5;
+    padding: 80px 0 50px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    transform: translate(-5%, 0);
+  }
+  .section_group--item.three p {
+    color: #838383;
+    font-weight: 300;
+    border-bottom: 1px solid #C97C68;
+  }
+}
+@media (min-width: 992px) {
+  .section--two {
+    min-height: 650px;
+  }
+  .section_group--item.one {
+    position: absolute;
+    left: 0;
+    transform: translate(15%, 25%);
+  }
+  .section_group--item.two {
+    display: block;
+    position: absolute;
+    left: 0;
+    transform: translate(40%, -50%);
+    z-index: -99;
+  }
+  .section_group--item.two img {
+    max-width: 70%;
+  }
+  .section_group--item.three {
+    background-color: #EBDED5;
+    padding: 60px 0 30px;
+    width: 750px;
+    position: absolute;
+    right: 0;
+    transform: translate(-0%, 60%);
+  }
+  .section_group--item.three p {
+    color: #838383;
+    font-weight: 300;
+    border-bottom: 1px solid #C97C68;
   }
 }
