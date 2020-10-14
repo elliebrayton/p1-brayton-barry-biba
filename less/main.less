@@ -6,12 +6,23 @@
     margin: 0;
     padding: 0;
 }
+
+html, body{
+    height: 100%;
+}
+
 body{
 
     background: @background-primary;
     font-family: @font-family-secondary !important;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+.content {
+    flex: 1 0 auto;
+  }
 
 .header{
     background: @color-white;
@@ -87,6 +98,11 @@ body{
 
 .footer{
     background: @background-tertiary;
+    flex-shrink: 0;
+}
+
+.rounded{
+    border-radius: .5rem !important;
 }
 
 @media (max-width: 600px){
