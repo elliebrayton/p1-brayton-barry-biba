@@ -2,7 +2,10 @@
 @import "mixins";
 @import "typography";
 @import "layout/navigation";
+@import "pages/shop";
+@import "pages/contact";
 @import "utilities";
+
 *{
     margin: 0;
     padding: 0;
@@ -152,6 +155,7 @@ body{
 textarea.main-form {
     min-height: 120px;
 }
+
     
 @media (max-width: 600px){
     .w-utility{
@@ -262,4 +266,16 @@ textarea.main-form {
             }
         }
     }    
+}
+
+@media (min-width: 1200px){
+    .coffee,
+    .merch{
+    justify-content: center;
+}
+    .shop-item{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
 }
