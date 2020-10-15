@@ -102,6 +102,8 @@ a.nav-link.active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 10rem;
 }
 .shop-items_container .h3 {
   flex: 0 0 100%;
@@ -110,9 +112,38 @@ a.nav-link.active {
   width: 300px;
   object-fit: cover;
   height: auto;
+  margin: 2rem 1rem;
+  position: relative;
 }
-.shop-item::not(:last-child) {
-  margin-right: 40px;
+.item-info {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  bottom: -30px;
+  left: -45%;
+  position: absolute;
+  background: #C97C68;
+  transform: translate(70%, 0);
+}
+.shop-item .h4 {
+  font-family: hero-new, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+.shop-item p {
+  color: white;
+}
+.shop-heading {
+  font-family: hero-new, sans-serif;
+  font-weight: 600;
+  font-size: 20px !important;
+  text-transform: uppercase;
+  text-align: center;
+  color: #C97C68;
 }
 .pt-utility-lg {
   padding: 60px 0 0;
@@ -343,5 +374,14 @@ textarea.main-form {
     color: #838383;
     font-weight: 300;
     border-bottom: 1px solid #C97C68;
+  }
+}
+@media (min-width: 1200px) {
+  .coffee,
+  .merch {
+    justify-content: center;
+  }
+  .shop-item:not(:last-child) {
+    margin-right: 2rem;
   }
 }
