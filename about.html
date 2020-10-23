@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/ahr7ies.css">
     <!-- LESS -->
+    <!--
     <link rel="stylesheet/less" type="text/css" href="less/main.less" /><script src="//cdn.jsdelivr.net/npm/less" ></script>
+  -->
     <!-- CSS -->
     <link rel="stylesheet" href="icofont.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/about.css">
+
     <title>Southbrew Coffee</title>
   </head>
   <body class="site">
@@ -57,11 +61,29 @@
     <main class="content container-md px-0">
       <h1 class="h1 page-title text-center pt-utility-lg py-5">About</h1>
       <div class="container">
-        <video width="1100" height="500" loop autoplay muted >
-          <source src="videos/southbrew.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
+        <div class="row d-flex justify-content-center ">
+        <div class="video">
+          <video width="100%" height="100%" controls muted>
+            <source src="videos/southbrew.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+        <div class="row d-flex justify-content-center about">
+          <div class="col">
+            <img src="images/location.jpg" alt="Southbrew Coffee Storefront" title="Southbrew Coffee Storefront" id="location">
+          </div>
+          <div class="col">
+            <p class="about-accent">Southbrew is a <span class="accent">local, woman-owned</span> coffee stand and specialty roaster in Huntsville, Alabama.</p>
+            <p class="about-accent">We strive toward <span class="accent">consistency</span> in our products, genuine <span class="accent">connections</span> with our customers, and meaningful <span class="accent">involvement</span> in the Rocket City community. </p>
+            <hr>
+            <div class="highlight">
+              <h3>Genuine Connections</h3>
+              <h3>Consistency in our Products</h3>
+              <h3>Meaningful Involvement</h3>
+            </div>
+          </div>
+      </div>
       </div>
     </main>
     <footer class="footer py-5">
