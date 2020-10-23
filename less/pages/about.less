@@ -4,7 +4,7 @@ div.video {
   margin-bottom: 50px;
 }
 
-div.row.d-flex.justify-content-center.about {
+div.row.about {
   margin-bottom: 50px;
 
   p.about-accent {
@@ -29,8 +29,51 @@ div.row.d-flex.justify-content-center.about {
   }
 }
 
+div.about-menu-link {
+  width: 100vw;
+  background-color: #EBDED5;
+  div.d-flex.justify-content-center {
+    div.row {
+      margin: 50px 0 40px 0;
+      div.col {
+        text-align: center;
+        hr {
+          margin: 30px auto;
+          height: 1px;
+          width: 20%;
+          background: #C97C68;
+        }
+      }
+    }
+  }
+}
+
+img#coffee-heart {
+  max-width: 200px;
+  display: none;
+}
+
+section.section--three.margin-utility-lg.d-none.d-md-block {
+
+  margin-top: 50px;
+
+    h2.h2.instagram{
+      text-align: center;
+      display: block;
+    }
+
+}
+
 img#location {
   max-width: 100%;
+}
+
+@media (min-width: 760px) {
+  img#coffee-heart {
+    display: flex;
+    position: relative;
+    transform: translateY(100px) translateX(150px);
+  }
 }
 
 @media (min-width: 920px) {
@@ -38,6 +81,10 @@ img#location {
     max-width: 900px;
     height: auto;
   }
+}
+
+@media (min-width: 992px) {
+
 }
 
 @media (min-width: 1200px) {

@@ -3,15 +3,15 @@ div.video {
   height: auto;
   margin-bottom: 50px;
 }
-div.row.d-flex.justify-content-center.about {
+div.row.about {
   margin-bottom: 50px;
 }
-div.row.d-flex.justify-content-center.about p.about-accent {
+div.row.about p.about-accent {
   margin-top: 20px;
   font-size: 20px;
   text-align: center;
 }
-div.row.d-flex.justify-content-center.about hr {
+div.row.about hr {
   height: 3px;
   width: 10%;
   margin: 0 auto;
@@ -19,15 +19,52 @@ div.row.d-flex.justify-content-center.about hr {
   margin-top: 50px;
   background: #C6CDBB;
 }
-div.row.d-flex.justify-content-center.about div.highlight {
+div.row.about div.highlight {
   margin-top: 50px;
   text-align: center;
 }
-div.row.d-flex.justify-content-center.about div.highlight h3 {
+div.row.about div.highlight h3 {
   color: #C97C68;
+}
+div.about-menu-link {
+  width: 100vw;
+  background-color: #EBDED5;
+}
+div.about-menu-link div.d-flex.justify-content-center div.row {
+  margin: 50px 0 40px 0;
+}
+div.about-menu-link div.d-flex.justify-content-center div.row div.col {
+  text-align: center;
+}
+div.about-menu-link div.d-flex.justify-content-center div.row div.col hr {
+  margin: 30px auto;
+  height: 1px;
+  width: 20%;
+  background: #C97C68;
+}
+img#coffee-heart {
+  max-width: 200px;
+  display: none;
+}
+section.section--three.margin-utility-lg.d-none.d-md-block {
+  margin-top: 50px;
+}
+section.section--three.margin-utility-lg.d-none.d-md-block h2.h2.instagram {
+  text-align: center;
+  display: block;
 }
 img#location {
   max-width: 100%;
+}
+@media (min-width: 760px) {
+  img#coffee-heart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-transform: translateY(100px) translateX(150px);
+            transform: translateY(100px) translateX(150px);
+  }
 }
 @media (min-width: 920px) {
   div.video {
