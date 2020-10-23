@@ -3,6 +3,10 @@
   display: table;
   clear: both;
 }
+.font-default {
+  font-family: operetta-12, serif;
+  color: #232323;
+}
 h1 {
   font-family: operetta-12, serif;
   color: #232323;
@@ -44,7 +48,7 @@ p {
 .navbar-toggle:active,
 .navbar-toggle:focus {
   background: none !important;
-  border-color: none !important;
+  border: none !important;
 }
 .icon-bar {
   width: 30px;
@@ -145,6 +149,82 @@ a.nav-link.active {
   text-align: center;
   color: #C97C68;
 }
+div.video {
+  max-width: 100vw;
+  height: auto;
+  margin-bottom: 50px;
+}
+div.row.about {
+  margin-bottom: 50px;
+}
+div.row.about p.about-accent {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+div.row.about hr {
+  height: 3px;
+  width: 10%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  background: #C6CDBB;
+}
+div.row.about div.highlight {
+  margin-top: 50px;
+  text-align: center;
+}
+div.row.about div.highlight h3 {
+  color: #C97C68;
+}
+div.about-menu-link {
+  width: 100vw;
+  background-color: #EBDED5;
+}
+div.about-menu-link div.d-flex.justify-content-center div.row {
+  margin: 50px 0 40px 0;
+}
+div.about-menu-link div.d-flex.justify-content-center div.row div.col {
+  text-align: center;
+}
+div.about-menu-link div.d-flex.justify-content-center div.row div.col hr {
+  margin: 30px auto;
+  height: 1px;
+  width: 20%;
+  background: #C97C68;
+}
+img#coffee-heart {
+  max-width: 200px;
+  display: none;
+}
+section.section--three.margin-utility-lg.d-none.d-md-block {
+  margin-top: 50px;
+}
+section.section--three.margin-utility-lg.d-none.d-md-block h2.h2.instagram {
+  text-align: center;
+  display: block;
+}
+img#location {
+  max-width: 100%;
+}
+@media (min-width: 760px) {
+  img#coffee-heart {
+    display: flex;
+    position: relative;
+    transform: translateY(100px) translateX(150px);
+  }
+}
+@media (min-width: 920px) {
+  div.video {
+    max-width: 900px;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  img#location {
+    max-width: 450px;
+  }
+}
 .pt-utility-lg {
   padding: 60px 0 0;
 }
@@ -195,8 +275,6 @@ body {
 }
 .button,
 .btn {
-  font-family: hero-new, sans-serif;
-  font-size: 15px;
   font-weight: 400;
   background: #C97C68;
   border: none;
